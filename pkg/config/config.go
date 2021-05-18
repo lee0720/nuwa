@@ -20,6 +20,14 @@ type MySQLConfiguration struct {
 	LogMode  MySQLLogMode
 }
 
+type InfluxConfiguration struct {
+	Host   string
+	Port   string
+	Token  string
+	Bucket string
+	Org    string
+}
+
 // PostgresConfiguration  configuration for Postgres database connection
 type PostgresConfiguration struct {
 	Host     string
